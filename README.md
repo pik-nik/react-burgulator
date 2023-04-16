@@ -18,6 +18,9 @@ Made with React
 
 -   _Make the carbonator_ :bread: Love bread? the carbonator is made of 7 buns
 
+-   Mobile phone and tablet friendly
+    ![photo of mobile phone version](/public/markdown/mobile-version.jpg)
+
 ## Credits to
 
 -   [Create React App template](https://github.com/facebook/create-react-app)
