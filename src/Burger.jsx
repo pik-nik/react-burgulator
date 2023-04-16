@@ -1,4 +1,5 @@
 import Ingredient from "./Ingredient.jsx"
+
 export default function Burger({ burger, onRemove: remove }) {
     return (
         <div className="burger">
