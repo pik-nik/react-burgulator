@@ -21,5 +21,5 @@ Made with React
 ## Credits to
 
 -   [Create React App template](https://github.com/facebook/create-react-app)
--   [CSS Burger Inspo](https://www.amberddesign.com/cheeseburger-with-html-and-css/ for css burger inspo)
+-   [CSS burger inspo](https://www.amberddesign.com/cheeseburger-with-html-and-css/)
 -   [Random UUID generator](https://github.com/uuidjs/uuid)
