@@ -20,7 +20,7 @@ export default function Menu(props) {
                     Make the carbonator
                 </button>
             </div>
-            <p className="copyright">&copy; pik-nik 2023</p>
+            <p className="copyright">&copy; 2023 pik-nik</p>
         </section>
     )
 }

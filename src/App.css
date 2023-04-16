@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=DynaPuff:wght@700&display=swap");
 
 body {
-    background-color: #bfdde9;
+    background-color: #c6e0dd;
 }
 
 .App {
@@ -28,6 +28,24 @@ body {
     position: absolute;
     top: 25px;
     left: 20px;
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 29px;
+    padding: 0 10px;
+}
+
+.toggle-menu-btn:hover {
+    background-color: #f7fafa;
+}
+
+.toggle-menu-btn:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+    outline: 0;
 }
 
 .plate {
@@ -48,7 +66,7 @@ body {
 .burger {
     width: 400px;
     margin: 20px auto;
-    height: 78vh;
+    height: 76vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -111,13 +129,17 @@ body {
     z-index: 2;
 }
 
-/* .cheese-label {
+.cheese-label {
     position: absolute;
     left: 0;
     right: 0;
     text-align: center;
-    top: 50%;
-} */
+    top: 25%;
+    font-family: "DynaPuff", cursive;
+    color: #e8ea02;
+    text-shadow: 0 0 5px #eab902;
+    font-size: 40px;
+}
 
 .menu {
     /* height: fit-content; */
@@ -128,6 +150,7 @@ body {
     border-radius: 20px;
     margin: 20px;
     grid-column: 2;
+    position: relative;
 }
 
 .hide-menu {
@@ -137,8 +160,8 @@ body {
 .menu h1 {
     font-family: "DynaPuff", cursive;
     font-size: 45px;
-    color: #faf3f4;
-    text-shadow: 0 0 5px #f2979d;
+    color: #19baa3;
+    text-shadow: 0 0 5px #b7fdf3;
     margin: 20px;
 }
 
@@ -157,7 +180,7 @@ body {
     position: absolute;
     /* z-index: -1; */
     background-color: none;
-    border: 1.75px dashed #de4a54;
+    border: 1.75px dashed #19baa3;
     transform: rotate(6deg);
     top: 0px;
     left: 5px;
@@ -169,20 +192,20 @@ body {
 .menu h2 {
     font-family: "DynaPuff", cursive;
     font-size: 30px;
-    color: #f2979d;
+    color: #f56c75;
     text-shadow: 0 0 5px #faf3f4;
     transform: rotate(3deg);
 }
 
 .menu button {
-    background-color: #fcbec2;
+    background-color: #ee646e;
     border-radius: 100px;
     box-shadow: rgba(242, 151, 157, 0.2) 0 -25px 18px -14px inset,
         rgba(242, 151, 157, 0.15) 0 1px 2px, rgba(242, 151, 157, 0.15) 0 2px 4px,
         rgba(242, 151, 157, 0.15) 0 4px 8px,
         rgba(242, 151, 157, 0.15) 0 8px 16px,
         rgba(242, 151, 157, 0.15) 0 16px 32px;
-    color: #f4525d;
+    color: #fdf6eb;
     cursor: pointer;
     display: inline-block;
     padding: 7px 20px;
@@ -209,6 +232,11 @@ body {
 
 .copyright {
     font-size: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 5px;
 }
 
 .table-cloth {
@@ -346,5 +374,90 @@ body {
         transform: translateY(0);
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
+    }
+}
+
+@media (max-width: 414px) {
+    .burger-and-menu {
+        display: grid;
+        grid-auto-columns: 1fr;
+    }
+    .burger-on-plate {
+        height: 60vh;
+        grid-column: 1;
+    }
+    .toggle-menu-btn {
+        top: 10px;
+        left: 5px;
+    }
+    .plate {
+        height: 100px;
+        width: 300px;
+        margin: 0 auto;
+        box-shadow: 1px 1px 4px 1px #000;
+    }
+    .burger {
+        width: 250px;
+        margin: 20px auto;
+        height: 50vh;
+    }
+    .cheese-label {
+        top: 15%;
+        font-size: 30px;
+    }
+    .menu {
+        height: fit-content;
+        min-width: fit-content;
+        width: 100%;
+        margin: 10px;
+        grid-column: 1;
+        padding-bottom: 30px;
+    }
+    .menu h1 {
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    .menu-buttons {
+        padding: 5px 5px;
+        width: 90%;
+        transform: rotate(-1deg);
+    }
+    .menu-buttons:before {
+        transform: rotate(2deg);
+        left: -2px;
+        right: -2px;
+    }
+    .menu h2 {
+        font-size: 20px;
+        text-shadow: 0 0 5px #faf3f4;
+        transform: rotate(1deg);
+        margin: 2px;
+    }
+    .menu button {
+        padding: 3px 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 2px;
+        transform: rotate(1deg);
+    }
+
+    .copyright {
+        font-size: 15px;
+        bottom: -10px;
+    }
+
+    .table-cloth {
+        height: 50vh;
+        width: 100vw;
+        background-image: linear-gradient(
+                90deg,
+                rgba(200, 0, 0, 0.5) 50%,
+                transparent 0
+            ),
+            linear-gradient(rgba(200, 0, 0, 0.5) 50%, transparent 0);
+        background-size: 20px 20px;
+        bottom: 5vh;
     }
 }
