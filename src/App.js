@@ -61,13 +61,6 @@ function App() {
     return (
         <div className="App">
             <div className="burger-and-menu">
-                <Menu
-                    name="BURGULATOR"
-                    onAdd={add}
-                    showMenu={showMenu}
-                    removeAll={removeAll}
-                    makeCarbonator={makeCarbonator}
-                />
                 <section className="burger-on-plate">
                     <button className="toggle-menu-btn" onClick={toggleMenu}>
                         show/hide ingredients menu
@@ -76,6 +69,13 @@ function App() {
                     <div className="plate"></div>
                     <div className="cheese-label">{cheesyLabel}</div>
                 </section>
+                <Menu
+                    name="BURGULATOR"
+                    onAdd={add}
+                    showMenu={showMenu}
+                    removeAll={removeAll}
+                    makeCarbonator={makeCarbonator}
+                />
             </div>
             <div className="table-cloth"></div>
         </div>

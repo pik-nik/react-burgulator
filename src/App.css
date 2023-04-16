@@ -15,108 +15,19 @@ body {
 
 .burger-and-menu {
     display: grid;
-    grid-template-columns: 30% 70%;
-}
-
-.menu {
-    /* height: fit-content; */
-    height: 85vh;
-    min-width: fit-content;
-    background-color: #fedda3;
-    border: 3px solid #fcc966;
-    border-radius: 20px;
-    margin: 20px;
-}
-
-.hide-menu {
-    display: none;
-}
-
-.menu h1 {
-    font-family: "DynaPuff", cursive;
-    font-size: 45px;
-    color: #faf3f4;
-    text-shadow: 0 0 5px #f2979d;
-    margin: 20px;
-}
-
-.menu-buttons {
-    position: relative;
-    background-color: #f9f9f9;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 20px;
-    transform: rotate(-3deg);
-    padding: 20px 10px;
-}
-
-.menu-buttons:before {
-    content: "";
-    position: absolute;
-    /* z-index: -1; */
-    background-color: none;
-    border: 1.75px dashed #de4a54;
-    transform: rotate(6deg);
-    top: 0px;
-    left: 5px;
-    right: 5px;
-    bottom: 0px;
-    border-radius: 20px;
-}
-
-.menu h2 {
-    font-family: "DynaPuff", cursive;
-    font-size: 30px;
-    color: #f2979d;
-    text-shadow: 0 0 5px #faf3f4;
-    transform: rotate(3deg);
-}
-
-.menu button {
-    background-color: #fcbec2;
-    border-radius: 100px;
-    box-shadow: rgba(242, 151, 157, 0.2) 0 -25px 18px -14px inset,
-        rgba(242, 151, 157, 0.15) 0 1px 2px, rgba(242, 151, 157, 0.15) 0 2px 4px,
-        rgba(242, 151, 157, 0.15) 0 4px 8px,
-        rgba(242, 151, 157, 0.15) 0 8px 16px,
-        rgba(242, 151, 157, 0.15) 0 16px 32px;
-    color: #f4525d;
-    cursor: pointer;
-    display: inline-block;
-    padding: 7px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 20px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    margin: 10px;
-    transform: rotate(3deg);
-}
-
-.menu button:hover {
-    box-shadow: rgba(242, 151, 157, 0.35) 0 -25px 18px -14px inset,
-        rgba(242, 151, 157, 0.25) 0 1px 2px, rgba(242, 151, 157, 0.25) 0 2px 4px,
-        rgba(242, 151, 157, 0.25) 0 4px 8px,
-        rgba(242, 151, 157, 0.25) 0 8px 16px,
-        rgba(242, 151, 157, 0.25) 0 16px 32px;
-    transform: scale(1.05) rotate(2deg);
-}
-
-.copyright {
-    font-size: 20px;
+    grid-auto-columns: 1fr fit-content(400px);
 }
 
 .burger-on-plate {
     position: relative;
+    height: 85vh;
+    grid-column: 1;
 }
 
 .toggle-menu-btn {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 25px;
+    left: 20px;
 }
 
 .plate {
@@ -207,6 +118,98 @@ body {
     text-align: center;
     top: 50%;
 } */
+
+.menu {
+    /* height: fit-content; */
+    height: 85vh;
+    min-width: fit-content;
+    background-color: #fedda3;
+    border: 3px solid #fcc966;
+    border-radius: 20px;
+    margin: 20px;
+    grid-column: 2;
+}
+
+.hide-menu {
+    display: none;
+}
+
+.menu h1 {
+    font-family: "DynaPuff", cursive;
+    font-size: 45px;
+    color: #faf3f4;
+    text-shadow: 0 0 5px #f2979d;
+    margin: 20px;
+}
+
+.menu-buttons {
+    position: relative;
+    background-color: #f9f9f9;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    transform: rotate(-3deg);
+    padding: 20px 10px;
+}
+
+.menu-buttons:before {
+    content: "";
+    position: absolute;
+    /* z-index: -1; */
+    background-color: none;
+    border: 1.75px dashed #de4a54;
+    transform: rotate(6deg);
+    top: 0px;
+    left: 5px;
+    right: 5px;
+    bottom: 0px;
+    border-radius: 20px;
+}
+
+.menu h2 {
+    font-family: "DynaPuff", cursive;
+    font-size: 30px;
+    color: #f2979d;
+    text-shadow: 0 0 5px #faf3f4;
+    transform: rotate(3deg);
+}
+
+.menu button {
+    background-color: #fcbec2;
+    border-radius: 100px;
+    box-shadow: rgba(242, 151, 157, 0.2) 0 -25px 18px -14px inset,
+        rgba(242, 151, 157, 0.15) 0 1px 2px, rgba(242, 151, 157, 0.15) 0 2px 4px,
+        rgba(242, 151, 157, 0.15) 0 4px 8px,
+        rgba(242, 151, 157, 0.15) 0 8px 16px,
+        rgba(242, 151, 157, 0.15) 0 16px 32px;
+    color: #f4525d;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 10px;
+    transform: rotate(3deg);
+}
+
+.menu button:hover {
+    box-shadow: rgba(242, 151, 157, 0.35) 0 -25px 18px -14px inset,
+        rgba(242, 151, 157, 0.25) 0 1px 2px, rgba(242, 151, 157, 0.25) 0 2px 4px,
+        rgba(242, 151, 157, 0.25) 0 4px 8px,
+        rgba(242, 151, 157, 0.25) 0 8px 16px,
+        rgba(242, 151, 157, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(2deg);
+}
+
+.copyright {
+    font-size: 20px;
+}
 
 .table-cloth {
     background: white;
