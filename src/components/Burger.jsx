@@ -1,6 +1,10 @@
+import { useContext } from "react"
 import Ingredient from "./Ingredient.jsx"
+import { BurgerContext } from "../burgerContext.js"
 
-export default function Burger({ burger, onRemove: remove }) {
+export default function Burger() {
+    const { burger, remove } = useContext(BurgerContext)
+
     return (
         <div className="burger">
             {burger.map((ing, idx) => (

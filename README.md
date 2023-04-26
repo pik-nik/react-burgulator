@@ -2,9 +2,11 @@
 
 Getting Hungry? Design your own artisan burger. :yum:
 
-[Check it out here](https://react-burgulator.herokuapp.com/)
+[Check it out here](https://pik-nik-burgulator.netlify.app/)
 
 Made with React
+
+To be honest, making this app got me so hungry I went out and got a burger for dinner.
 
 ## How to use
 
